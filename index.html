@@ -27,5 +27,20 @@
 	</style>
 </head>
 <body>
+<h1 class="center"> ITMD-361 - Lab 6 - Basic JavaScript Event Handling and DOM </h1>
+	<h2 class="center"> Roshan Paul </h2>
+	<h3 class="center"> rpaul3@hawk.iit.edu </h3>
+	<div id="container">
+		<input id="entryinput" type="text" name="textentry" placeholder="Enter a Message">
+		<div id="entrybutton"> Alert Me </div>
+		<h2 id="textoutput" class="center">Show results here</h2>
+	</div>
+	<script>
+			document.getElementById("entrybutton").addEventListener("click", function() {
+				var resp = document.getElementById("entryinput").value;
+				document.getElementById("textoutput").innerHTML = resp;
+				alert("Roshan Paul: " + resp);
+				})
+	</script>
 </body>
 </html>
